@@ -33,7 +33,7 @@ const CampaignsDetails = () => {
 
   const handleSubmitApplication = async () => {
     try {
-      const res = await axios.post(
+      await axios.post(
         `http://localhost:3000/campaigns/submit/${id}`,
         {
           influencerId: decoded.id,
